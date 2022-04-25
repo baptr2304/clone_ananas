@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Nav-bar*/
+
+.nav{
+    width: 100%;
+    background-color: #303030;    
+}
+.nav-list{
+    height: 35px;
+    list-style: none;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+    padding-right: 60px;  
+}
+.nav-item{
+    color: aliceblue;
+    margin: 0 6px;
+    font-size: 12px;
+    /* padding: 5px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-item img{
+    /* vertical-align: middle; */
+    display: block;
+    margin: auto;
+    margin-right: 4px;
+   
+}
+.nav-item span{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nav-bar-center*/
+
+.nav-bar-center{
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.nbc-main-list{
+    list-style: none;
+    display:flex ; 
+    align-items: baseline;
+}
+.nbc-main-list-item{
+    display:flex ; 
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-right: 3.5px solid  #e3e2e2;
+    margin-right: 10px;
+    padding:  0 20px;
+    text-align: center;
+    height: 35px;
+}
+
+.img-item{
+    margin-left: 10px;
+}
+.nbc-search-box{
+    background: url("./img/icon_tim_kiem.svg") no-repeat left;
+    background-size: 20px;
+    padding: 7px 0 7px 40px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(187, 187, 187);
+    background-position: 10px 10px;/*chinh vi tri cua bgr*/
+}
+.banner{
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.banner p {
+    padding: 0 70px;
+}
+.right-icon{
+    transform:rotate(180deg);
+}
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.blog{
+    width: 100%;
+    height:650px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* overflow: hidden;
+    margin: 0 30px; */
+}
+.blog1 img {
+    width: 600px;
+    height: 340px;
+    padding: 30px;
+}
+
+.blog1 .text {
+    height: 150px;
+    width: 600px;
+    padding: 0 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.shopping_list {
+    width: 100%;
+    height: 450px;
+}
+.shopping_list h1{
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+.spl-title{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
+}
+.spl-content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.spl-item{
+    width: 400px;
+    height: 300px;
+    padding: 7px;
+
+}
+
+.spl-item img{
+    filter:brightness(60%);
+    width: 400px;
+    height: 290px;
+}
+
+.spl-text{
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* best - saller*/
+.best_saller h1{
+    text-align: center;
+    margin: 0 8px;
+}
+.bs-product{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.bs-product-item {
+    width: 320px;
+    height: 400px;
+}
+.bs-product-item img{
+    width: 300px;
+    height: 300px;
+}
+.bs-product-item-text{
+    text-align: center;
+}
+
+.hero-section2{
+    margin-top: 10px;
+}
+.hero-section2 img{
+    width: 100%;
+    height: 100vh;
+}
+.advertise{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
