@@ -125,7 +125,7 @@ body{
 }
 .shopping_list {
     width: 100%;
-    height: 450px;
+    
 }
 .shopping_list h1{
     text-align: center;
@@ -148,21 +148,60 @@ body{
     width: 400px;
     height: 300px;
     padding: 7px;
-
+    position: relative;
 }
 
 .spl-item img{
     filter:brightness(60%);
     width: 400px;
     height: 290px;
+    
 }
 
 .spl-text{
-    position: relative;
-    bottom: 200px;
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    right: 0; 
+    transform: translate(0, -50%);
     text-align: center;
     color: #ffffff;
     font-weight: bold;
+}
+@media screen and (max-width: 1200px)   {
+    .spl-content{
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+            'blog1 blog2'
+            'blog3 blog3'
+        ;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto;
+    }
+    .spl-item {
+        width: 90%;
+    }
+    .spl-item img {
+        width: 105%;
+        height: 300px;
+    }
+    .spl-content .blog1-1 {
+        grid-area: blog1;
+    }
+    .spl-content .blog2 {
+        grid-area: blog2;
+    }
+    .spl-content .blog3 {
+        grid-area: blog3;
+    }
+    .spl-content .blog3 img {
+        width: 108%;
+    }
+    .spl-text {
+        transform: translate(5%, -50%);
+    }
 }
 
 /* best - saller*/
