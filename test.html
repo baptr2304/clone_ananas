@@ -63,7 +63,8 @@
                 <!-- <img src="./img/icon_tim_kiem.svg" alt=""> -->
                 <input class="nbc-search-box" type="text" placeholder="Tìm kiếm">
             </div>
-
+        
+            <div class="toogleButton" onclick="openMenu()"></div>
         </div>
         <div class="banner">
             <img src="./img/icon_left.png" alt="">
@@ -192,4 +193,14 @@
         </div>
     </div>
 </body>
+<script>
+    function openMenu() {
+        const menuToggle = document.querySelector(".toogleButton");
+        const nbcMain = document.querySelector(".nbc-main");
+        const searchBox = document.querySelector(".nbc-search");
+        menuToggle.classList.toggle("active");
+        nbcMain.classList.toggle("active");
+        searchBox.classList.toggle("active");
+    }
+</script>
 </html>

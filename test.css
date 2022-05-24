@@ -81,6 +81,87 @@ body{
     border: 1px solid rgb(187, 187, 187);
     background-position: 10px 10px;/*chinh vi tri cua bgr*/
 }
+.toogleButton {
+    display: none;
+}
+@media (max-width: 1050px) and (min-width: 851px) {
+    .nav-bar-center {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+    }
+    .nbc-search {
+        margin: 0px 20px 10px 20px;
+        height: 30px;
+        justify-content: flex-end !important;
+    }
+}
+@media (max-width: 850px) {
+    .nav-bar-center {
+        justify-content: space-between;
+        height: 120px;
+    }
+    .nbc-main {
+        display: none;
+    }
+    .nbc-search {
+        display:none;
+    }
+    .toogleButton {
+        display: block;
+    }
+    .nbc-img img {
+        margin: 0px 50px;
+    }
+    .nbc-main.active {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 6;
+    }
+    .nbc-search.active {
+        display:flex;
+        z-index: 999;
+        width: 200px;
+        height: 50px;
+    }
+    .nbc-main.active .nbc-main-list {
+        height: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .toogleButton {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        filter: invert(1);
+        background: url("./img/menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        margin: 0px 50px;
+    }
+    .toogleButton.active {
+        background: url("./img/close.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 9;
+        filter: invert(1);
+    }
+}
 .banner{
     width: 100%;
     height: 50px;
@@ -110,6 +191,12 @@ body{
     align-items: center;
     /* overflow: hidden;
     margin: 0 30px; */
+}
+@media (max-width: 1340px) {
+    .blog {
+        flex-direction: column;
+        height: auto;
+    }
 }
 .blog1 img {
     width: 600px;
@@ -227,7 +314,20 @@ body{
 .bs-product-item-text{
     text-align: center;
 }
-
+@media (max-width: 1340px) {
+    .bs-product {
+        margin: 15px 0px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        display:grid;
+        grid-template-columns: 400px 400px;
+        justify-items: center;
+    }
+    .bs-product-item {
+        height: auto;
+    }
+}
 .hero-section2{
     margin-top: 10px;
 }
